@@ -1,5 +1,5 @@
+import 'package:bytebank/screens/contacts_list.dart';
 import 'package:flutter/material.dart';
-import 'contacts_list.dart';
 
 class Dashboard extends StatelessWidget {
   @override
@@ -24,7 +24,7 @@ class Dashboard extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => ContactList(),
+                      builder: (context) => ContactsList(),
                     ),
                   );
                 },
@@ -43,8 +43,11 @@ class Dashboard extends StatelessWidget {
                       ),
                       Text(
                         'Contacts',
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
-                      ),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                        ),
+                      )
                     ],
                   ),
                 ),
